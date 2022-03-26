@@ -10,15 +10,15 @@ export function TopRelatedMovies() {
             .then(response => response.json())
             .then(data => setRepositories(data))
 
+
     }, [])
-    console.log(repositories.results)
 
     return (
         <section className="repository-list">
-            <h1>Top Related Movies</h1>
+            <h1>Top Related Movies 2</h1>
             <ul>
-                {repositories.results.map(repository => {
-                    return <TopRelatedMoviesItem key={repository.original_title} repository={repository} />
+                {repositories.map(repository => {
+                    return <TopRelatedMoviesItem repository={repository} />
                 })}
             </ul>
         </section>

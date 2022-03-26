@@ -5,6 +5,10 @@ export function TopRelatedMoviesItem(props) {
             <p>{props.repository.overview}</p>
 
             <p>{props.repository.release_date}</p>
+
+            <p>Nota: {props.repository.vote_average}</p>
+
+
         </li>
     )
 }
