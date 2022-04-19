@@ -1,25 +1,25 @@
 interface TopRelatedMoviesItemProps {
-    repository: {
-        results: {
-            original_title: string;
-            overview: string;
-            release_date: string;
-            vote_average: string
-        }
+    repository: {        
+        title: string;
+        overview: string;
+        release_date: string;
+        vote_average: string;
+        poster_path: string;               
     }
 }
 
 export function TopRelatedMoviesItem(props: TopRelatedMoviesItemProps) {
     return (
         <li>
-            <strong>{props.repository.results.original_title}</strong>
-            <p>{props.repository.results.overview}</p>
+            <strong>{props.repository.title}</strong>
 
-            <p>{props.repository.results.release_date}</p>
+            <p>Overwiew: {props.repository.overview}</p>
 
-            <p>Nota: {props.repository.results.vote_average}</p>
+            <p>Release Data: {props.repository.release_date}</p>
 
+            <p>Nota: {props.repository.vote_average}</p>
 
+            <p>Poster: {props.repository.poster_path}</p>
         </li>
     )
 }
