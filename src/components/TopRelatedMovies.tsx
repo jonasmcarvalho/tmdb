@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import { TopRelatedMoviesItem } from "./TopRelatedMoviesItem";
 
+import '../styles/topRelatedMovies.scss'
+
+
+
 interface Repository {    
     title: string;
     overview: string;

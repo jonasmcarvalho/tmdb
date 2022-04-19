@@ -13,9 +13,9 @@ export function TopRelatedMoviesItem(props: TopRelatedMoviesItemProps) {
         <li>
             <strong>{props.repository.title}</strong>
 
-            <p>Overwiew: {props.repository.overview}</p>
+            <p>{props.repository.overview}</p>
 
-            <p>Release Data: {props.repository.release_date}</p>
+            <p>Lançamento: {props.repository.release_date}</p>
 
             <p>Nota: {props.repository.vote_average}</p>
 
